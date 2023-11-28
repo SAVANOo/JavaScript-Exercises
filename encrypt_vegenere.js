@@ -19,6 +19,7 @@ function EncryptVegenere(Texto, Chave) {
     for (let i = 0; i < Texto.length; i++) {
         TextoNumber[i] = (Texto.toUpperCase().charCodeAt(i) - 65)
     }
+    
     for (let i = 0; i < Chave.length; i++) {
         ChaveNumber[i] = (Chave.toUpperCase().charCodeAt(i) - 65)
     }
