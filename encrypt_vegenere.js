@@ -1,7 +1,7 @@
 console.log(EncryptVegenere("Hello World", 1)) // Null
 console.log(EncryptVegenere(1, "Abc")) // Null
 console.log(EncryptVegenere(1, 2)) // Null
-console.log(EncryptVegenere("Hello World", "SAVIO")) // EGIKIKMOMO
+console.log(EncryptVegenere("Hello World", "SAVIO")) // ZEGTC WJZZV
 console.log(EncryptVegenere("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "B")) // BCDEFGHIJKLMNOPQRSTUVWXYZA
 console.log(EncryptVegenere("ABCDEFGHIJ", "EFGH"))// EGIKIKMOMO
 console.log(EncryptVegenere("abcdefghij", "efgh")) // EGIKIKMOMO
