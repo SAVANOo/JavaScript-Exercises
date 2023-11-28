@@ -11,15 +11,14 @@ function BinToDec(inteiro) {
     else {
         let BinString = String(inteiro);
         let Decimal = Number(0)
-        let aux = Number(0)
+        let Potencia = Number(0)
 
         for (let i = BinString.length - 1; i >= 0; i--) {
             if (Number(BinString[i]) == 1) {
-                Decimal += Math.pow(2, aux);
+                Decimal += Math.pow(2, Potencia);
             }
-            aux++;
+            Potencia++;
         }
-
         return Decimal;
     }
 }
