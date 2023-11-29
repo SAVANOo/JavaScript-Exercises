@@ -1,4 +1,5 @@
 console.log(DecimalToRoman("a")) // null
+console.log(DecimalToRoman(null)) // null
 console.log(DecimalToRoman(true)) // null
 console.log(DecimalToRoman("1")) // I
 console.log(DecimalToRoman("5")) // V
@@ -7,7 +8,8 @@ console.log(DecimalToRoman(90)) // XC
 console.log(DecimalToRoman(80)) // LXXX
 
 function DecimalToRoman(Decimal) {
-    if ((typeof Decimal == "string" && isNaN(Decimal)) || typeof Decimal == 'boolean') {
+    if (!((typeof Decimal == "string" && !isNaN(Decimal))
+        || typeof Decimal == 'number')) {
         return null;
     }
 
